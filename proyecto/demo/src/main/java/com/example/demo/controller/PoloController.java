@@ -10,16 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.model.Polo;
 import com.example.demo.service.PoloService;
 
-
 @RestController
 @RequestMapping("/polo")
 public class PoloController {
+    
     @Autowired
     PoloService poloService;
-
     @GetMapping("")
-    public List<Polo> list(){
+    public List<Polo> list() {
         return poloService.buscarPolo();
     }
-    
 }
