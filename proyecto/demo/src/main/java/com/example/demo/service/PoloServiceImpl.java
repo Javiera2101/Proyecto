@@ -26,9 +26,4 @@ public class PoloServiceImpl implements PoloService {
     public void agregarPolo(Polo polo) {
         repPolo.save(polo);
     }
-
-    
-
-    
-    
 }
