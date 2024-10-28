@@ -16,8 +16,11 @@ public class PoloController {
     
     @Autowired
     PoloService poloService;
+
+
     @GetMapping("")
     public List<Polo> list() {
         return poloService.buscarPolo();
     }
+
 }
