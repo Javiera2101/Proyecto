@@ -34,12 +34,6 @@ public class SugerenciaController {
         return new ResponseEntity<>(sugerenciaEditada, HttpStatus.OK);
     }
 
-    @PatchMapping("/aprobar/{id}")
-    public ResponseEntity<Void> aprobarSugerencia(@PathVariable Long id) {
-        sugerenciaService.aprobarSugerencia(id);
-        return new ResponseEntity<>(HttpStatus.OK);
-    }
-
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminarSugerencia(@PathVariable Long id) {
         sugerenciaService.eliminarSugerencia(id);
