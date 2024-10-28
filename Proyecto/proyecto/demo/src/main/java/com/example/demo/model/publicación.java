@@ -11,13 +11,11 @@ public class publicación {
     private Long id_publicacion;
 
     private String nom_publicacion;
-
     private String gestionar;
-
     private String categoria;
-
     private LocalDate fechaPublicacion;
 
+    // Relación con Polo (muchos a uno)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "polo_id")
     private Polo polo;
